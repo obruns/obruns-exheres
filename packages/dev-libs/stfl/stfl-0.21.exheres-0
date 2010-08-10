@@ -1,0 +1,24 @@
+# Copyright 2010 Oliver Bruns
+# Distributed under the terms of the GNU General Public License v2
+# Based in part upon 'stfl-0.21.ebuild' from Gentoo, which is:
+#     Copyright 1999-2010 Gentoo Foundation
+
+SUMMARY="A library which implements a curses-based widget set for text terminals"
+HOMEPAGE="http://www.clifford.at/stfl/"
+DOWNLOADS="http://www.clifford.at/stfl/stfl-0.21.tar.gz"
+
+BUGS_TO="obruns@googlemail.com"
+
+UPSTREAM_DOCUMENTATION="${HOMEPAGE}/trunk/README"
+
+LICENCES="LGPL-3"
+SLOT="0"
+PLATFORMS="~x86"
+
+DEPENDENCIES="
+    build+run:
+        sys-libs/ncurses
+"
+
+DEFAULT_SRC_INSTALL_PARAMS=( prefix="/usr" )
+
