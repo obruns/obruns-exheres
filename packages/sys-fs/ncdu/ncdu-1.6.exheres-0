@@ -1,0 +1,28 @@
+# Copyright 2010 Oliver Bruns
+# Distributed under the terms of the GNU General Public License v2
+# Based in part upon 'ncdu-1.6.ebuild' from Gentoo, which is:
+#     Copyright 1999-2010 Gentoo Foundation
+
+SUMMARY="NCurses Disk Usage"
+HOMEPAGE="http://dev.yorhel.nl/ncdu"
+DOWNLOADS="http://dev.yorhel.nl/download/${PNV}.tar.gz"
+
+UPSTREAM_DOCUMENTATION="${HOMEPAGE}/man"
+
+UPSTREAM_CHANGELOG="${HOMEPAGE}/changes"
+
+REMOTE_IDS="sourceforge:ncdu"
+
+LICENCES="MIT"
+SLOT="0"
+PLATFORMS="~x86"
+MYOPTIONS=""
+
+DEPENDENCIES="
+    build:
+    build+run:
+        sys-libs/ncurses
+"
+
+BUGS_TO="obruns@googlemail.com"
+
