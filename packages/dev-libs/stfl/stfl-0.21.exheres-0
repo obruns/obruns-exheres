@@ -5,7 +5,7 @@
 
 SUMMARY="A library which implements a curses-based widget set for text terminals"
 HOMEPAGE="http://www.clifford.at/stfl/"
-DOWNLOADS="http://www.clifford.at/stfl/stfl-0.21.tar.gz"
+DOWNLOADS="http://www.clifford.at/stfl/${PNV}.tar.gz"
 
 BUGS_TO="obruns@googlemail.com"
 
