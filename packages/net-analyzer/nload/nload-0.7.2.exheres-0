@@ -1,0 +1,24 @@
+# Copyright 2010 Oliver Bruns
+# Distributed under the terms of the GNU General Public License v2
+# Based in part upon 'nload-0.7.1.ebuild' from Gentoo, which is:
+#     Copyright 1999-2008 Gentoo Foundation
+
+SUMMARY="console application which monitors network traffic and bandwidth usage in real time"
+HOMEPAGE="http://www.roland-riegel.de/nload/index.html"
+DOWNLOADS="http://www.roland-riegel.de/nload/${PNV}.tar.gz"
+
+UPSTREAM_CHANGELOG="http://www.roland-riegel.de/nload/changelog"
+
+LICENCES="GPL-2"
+SLOT="0"
+PLATFORMS="~x86"
+MYOPTIONS=""
+
+DEPENDENCIES="
+    build:
+    build+run:
+        sys-libs/ncurses[>=5.2]
+"
+
+BUGS_TO="obruns@googlemail.com"
+
