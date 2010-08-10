@@ -1,0 +1,38 @@
+# Copyright 2010 Oliver Bruns
+# Distributed under the terms of the GNU General Public License v2
+# Based in part upon 'newsbeuter-2.2.ebuild' from Gentoo, which is:
+#     Copyright 1999-2010 Gentoo Foundation
+
+SUMMARY="A ncurses-based RSS/Atom feed reader for text terminals"
+DESCRIPTION="Newsbeuter is completely keyboard-controlled and allows podcasts to be fetched
+with the accompanying podbeuter tool"
+HOMEPAGE="http://www.newsbeuter.org/"
+DOWNLOADS="http://www.newsbeuter.org/downloads/${PNV}.tar.gz"
+
+BUGS_TO="obruns@googlemail.com"
+
+UPSTREAM_DOCUMENTATION="
+${HOMEPAGE}/doc/newsbeuter.html   [[ description = [ An in-depth user manual ] ]]
+"
+
+UPSTREAM_CHANGELOG="${HOMEPAGE}/downloads/CHANGES"
+
+LICENCES="MIT"
+SLOT="0"
+PLATFORMS="~x86"
+
+DEPENDENCIES="
+    build+run:
+        dev-db/sqlite[>=3.5]
+        dev-libs/stfl[>=0.21]
+        net-misc/curl
+        dev-libs/libxml2
+    build:
+        dev-util/pkg-config
+        sys-devel/gettext
+    test:
+        dev-libs/boost
+"
+
+DEFAULT_SRC_INSTALL_PARAMS=( prefix="/usr" )
+
