@@ -24,9 +24,9 @@ PLATFORMS="~x86"
 DEPENDENCIES="
     build+run:
         dev-db/sqlite[>=3.5]
+        dev-libs/libxml2
         dev-libs/stfl[>=0.21]
         net-misc/curl
-        dev-libs/libxml2
     build:
         dev-util/pkg-config
         sys-devel/gettext
