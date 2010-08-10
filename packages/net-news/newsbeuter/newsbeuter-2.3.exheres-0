@@ -30,8 +30,6 @@ DEPENDENCIES="
     build:
         dev-util/pkg-config
         sys-devel/gettext
-    test:
-        dev-libs/boost
 "
 
 DEFAULT_SRC_INSTALL_PARAMS=( prefix="/usr" )
